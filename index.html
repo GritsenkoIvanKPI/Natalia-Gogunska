@@ -91,7 +91,7 @@
       transition: color 0.2s ease;
       position: relative;
     }
-    .nav-links a::after {
+    .nav-links a:not(.btn-primary)::after {
       content: '';
       position: absolute;
       bottom: -4px;
@@ -102,7 +102,7 @@
       transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     .nav-links a:hover { color: var(--primary-dark); }
-    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:not(.btn-primary):hover::after { width: 100%; }
     .nav-links a:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; border-radius: 2px; }
 
     .btn-primary {
@@ -1493,12 +1493,12 @@
       <div class="benefits-header">
         <div class="section-tag fade-up">Преимущества</div>
         <h2 class="section-title fade-up delay-1">Почему выбирают нас</h2>
-        <p class="section-subtitle fade-up delay-2">Сервис личного бухгалтера по тарифам аутсорсинга. Полная ответственность и глубокий персональный подход к&nbsp;каждому клиенту</p>
+        <p class="section-subtitle fade-up delay-2">Сервис личного бухгалтера по тарифам аутсорсинга. Полная ответственность и глубокий персональный подход к&nbsp;каждому&nbsp;клиенту</p>
       </div>
       <div class="benefits-grid">
         <div class="benefit-card fade-up">
-          <div class="benefit-number">10<span class="accent">%</span></div>
-          <div class="benefit-label">Налог на&nbsp;прибыль, один из&nbsp;самых низких в&nbsp;ЕС</div>
+          <div class="benefit-number">5<span class="accent">+</span></div>
+          <div class="benefit-label">Лет опыта в&nbsp;бухгалтерском сопровождении бизнеса</div>
         </div>
         <div class="benefit-card fade-up delay-1">
           <div class="benefit-number">100<span class="accent">+</span></div>
